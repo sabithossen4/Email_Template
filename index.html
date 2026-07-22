@@ -1,413 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OrFactor - Spa Digital Experience</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #2d3748;
-            background-color: #f7fafc;
-            line-height: 1.6;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .text-container {
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        /* --- Buttons --- */
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 18px;
-            transition: background 0.3s ease;
-        }
-
-        .btn-white {
-            background-color: #ffffff;
-            color: #0fb78d;
-        }
-
-        .btn-white-2 {
-            background-color: #ffffff;
-            color: #191919;
-        }
-
-        .btn-green {
-            background-color: #34D399;
-            color: #191919;
-        }
-        .btn-green-2 {
-            color: #34D399;
-            background-color: #191919;
-        }
-
-        .btn-dark {
-            background-color: #1a202c;
-            color: #ffffff;
-        }
-
-        /* --- Navbar --- */
-        .navbar {
-            background-color: #34D399;
-            color: #ffffff;
-            padding: 20px 0;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-weight: 700;
-            font-size: 20px;
-            color: #191919;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo img {
-            width: 21px;
-            height: 32px;
-            margin-right: 12px;
-            display: flex;
-            align-items: end;
-        }
-
-        .tagline {
-            font-weight: 400;
-            font-size: 15px;
-            letter-spacing: -0.03em;
-            color: #191919;
-
-        }
-
-        /* --- Hero Section --- */
-        .hero {
-            background: #34D399;
-            text-align: center;
-            padding: 60px 0 0 0;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .hero h1 {
-            max-width: 800px;
-            margin: 0 auto 20px auto;
-            line-height: 1.3;
-
-            font-weight: 900;
-            font-size: 48px;
-            text-align: center;
-            color: #191919;
-
-        }
-
-        .hero p {
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-            opacity: 0.9;
-            font-weight: 400;
-            font-size: 20px;
-            text-align: center;
-            color: #191919;
-        }
-
-        /* Laptop Mockup Wrapper */
-        .mockup-container {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-        }
-
-        /* --- Intro Section --- */
-        .intro {
-            padding: 80px 0;
-            background-color: #ffffff;
-            text-align: left;
-        }
-
-        .intro p {
-            margin-bottom: 20px;
-            font-weight: 400;
-            font-size: 16px;
-            color: #000;
-        }
-
-        .intro .btn {
-            margin-top: 20px;
-        }
-
-        /* --- Previews Section --- */
-        .previews {
-            padding: 40px 0;
-        }
-
-        .preview-row {
-            display: flex;
-            margin-bottom: 20px;
-        }
-        
-        .bg-light {
-            background-color: #ffffff;
-            color: #2d3748;
-        }
-
-        .bg-dark {
-            background-color: #1a202c;
-            color: #ffffff;
-        }
-
-        .bg-dark-green {
-            background-color: #062f22;
-            color: #ffffff;
-        }
-        
-        
-        .placeholder-list .line {
-            background-color: #2d3748;
-            height: 12px;
-            margin-bottom: 10px;
-            border-radius: 2px;
-            width: 80%;
-        }
-
-        /* Full Row Feature */
-        .full-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .feature-text p {
-            font-size: 14px;
-            opacity: 0.8;
-            margin-top: 10px;
-        }
-
-        .wave-graphic {
-            height: 150px;
-            background: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.1) 50%);
-            background-size: 20px 20px;
-            border: 1px dashed rgba(255, 255, 255, 0.2);
-            border-radius: 4px;
-        }
-
-        /* --- Checklist Section --- */
-        .checklist {
-            padding: 60px 0 80px 0;
-            background-color: #ffffff;
-        }
-
-        .checklist ul {
-            margin-bottom: 20px;
-        }
-
-        .checklist li {
-            margin-bottom: 12px;
-            font-size: 16px;
-        }
-
-        .preview-note {
-            margin-bottom: 30px;
-            color: #718096;
-        }
-
-        /* --- Footer --- */
-        .footer {
-            background-color: #0cb38a;
-            color: #ffffff;
-            text-align: center;
-            padding: 60px 0;
-            font-size: 14px;
-        }
-
-        .footer-logo {
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-
-        .copyright,
-        .address {
-            opacity: 0.9;
-            margin-bottom: 5px;
-        }
-
-        .footer-msg {
-            max-width: 600px;
-            margin: 40px auto 20px auto;
-            line-height: 1.5;
-        }
-
-        .closing {
-            margin-bottom: 20px;
-        }
-
-        .signature {
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .social-icons span {
-            background-color: rgba(255, 255, 255, 0.2);
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        .support {
-            font-size: 12px;
-            opacity: 0.7;
-        }
-
-        /* --- Responsive Adaptations --- */
-        @media (max-width: 768px) {
-
-            .preview-row{
-                flex-direction: column;
-            }
-
-            .hero h1 {
-                font-size: 26px;
-            }
-        }
-    </style>
 </head>
+<body style="margin:0; padding:0; width:100%; background-color:#f7fafc; font-family:Arial, Helvetica, sans-serif; color:#2d3748;">
+    <div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all;">
+        A refined spa website concept designed to turn visitors into bookings.
+    </div>
 
-<body>
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%; background-color:#f7fafc;">
+        <tr>
+            <td align="center" style="padding:0;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; max-width:900px; width:100%; margin:0 auto;">
+                    <tr>
+                        <td style="background-color:#34d399; padding:24px 20px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%;">
+                                <tr>
+                                    <td valign="middle" style="font-size:20px; font-weight:700; color:#191919; line-height:1.3;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+                                            <tr>
+                                                <td valign="middle" style="padding-right:12px;">
+                                                    <img src="images/logo/logo.png" alt="OrFactor logo" width="21" height="32" style="display:block; border:0; width:21px; height:32px;">
+                                                </td>
+                                                <td valign="middle" style="font-size:20px; font-weight:700; color:#191919;">
+                                                    OrFactor
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right" valign="middle" style="font-size:15px; font-weight:400; color:#191919; line-height:1.4;">
+                                        Think. Create. Change.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-    <!-- Header / Navbar -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <div class="logo"> <span><img src="/images/logo/logo.png" alt="logo"></span> OrFactor</div>
-            <div class="tagline">Think. Create. Change.</div>
-        </div>
-    </header>
+                    <tr>
+                        <td align="center" style="background-color:#34d399; padding:56px 20px 0 20px; text-align:center;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%;">
+                                <tr>
+                                    <td align="center" style="padding:0 0 20px 0;">
+                                        <div style="max-width:800px; margin:0 auto; font-size:42px; line-height:1.3; font-weight:900; color:#191919;">
+                                            Your spa deserves a digital experience as calming as the treatments you offer.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0 0 30px 0;">
+                                        <div style="max-width:600px; margin:0 auto; font-size:20px; line-height:1.6; font-weight:400; color:#191919;">
+                                            We imagined how your brand could feel online: elegant, trustworthy, and designed to turn visitors into bookings.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0 0 50px 0;">
+                                        <a href="#" style="display:inline-block; padding:12px 24px; border-radius:4px; background-color:#ffffff; color:#191919; text-decoration:none; font-size:18px; font-weight:700; line-height:1.2;">
+                                            Start Your Project ->
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0;">
+                                        <img src="images/hero/hero-img.png" alt="Spa website concept preview" width="860" style="display:block; width:100%; max-width:860px; height:auto; border:0;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-container">
-            <h1>Your spa deserves a digital experience as calming as the treatments you offer.</h1>
-            <p>We imagined how your brand could feel online: elegant, trustworthy, and designed to turn visitors into
-                bookings.</p>
-            <a href="#" class="btn btn-white-2">Start Your Project ↗</a>
+                    <tr>
+                        <td style="background-color:#ffffff; padding:80px 20px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%; max-width:650px; margin:0 auto;">
+                                <tr>
+                                    <td style="padding:0 0 20px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        Hello,
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 20px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        While exploring your spa, we found ourselves thinking about the experience your clients have before they ever step through the door. The atmosphere, the care, the attention to detail: those are the things that make people return. Yet online, that feeling is often difficult to capture.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 20px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        So we put together a concept.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 20px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        Not a template. Not a generic redesign. A visual direction that imagines how your spa could be presented through a more refined digital experience.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 20px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        The goal was simple: create the same sense of calm, trust, and anticipation online that clients feel when they visit in person.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top:12px;">
+                                        <a href="#" style="display:inline-block; padding:12px 24px; border-radius:4px; background-color:#34d399; color:#191919; text-decoration:none; font-size:18px; font-weight:700; line-height:1.2;">
+                                            Contact Us
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-            <div class="mockup-container">
-                <img src="/images/hero/hero-img.png" alt="hero img">
-            </div>
-        </div>
-    </section>
+                    <tr>
+                        <td style="padding:40px 20px; background-color:#f7fafc;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%;">
+                                <tr>
+                                    <td align="center" style="padding:0 0 20px 0;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%;">
+                                            <tr>
+                                                <td valign="top" width="50%" style="padding-right:10px;">
+                                                    <img src="images/services/services-1.png" alt="Service preview one" width="425" style="display:block; width:100%; max-width:425px; height:auto; border:0;">
+                                                </td>
+                                                <td valign="top" width="50%" style="padding-left:10px;">
+                                                    <img src="images/services/services-2.png" alt="Service preview two" width="425" style="display:block; width:100%; max-width:425px; height:auto; border:0;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%; background-color:#062f22;">
+                                            <tr>
+                                                <td style="padding:0;">
+                                                    <img src="images/services/testi-iamge.png" alt="Testimonial preview" width="860" style="display:block; width:100%; max-width:860px; height:auto; border:0;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-    <!-- Introduction Section -->
-    <section class="intro">
-        <div class="container text-container">
-            <p>Hello,</p>
-            <p>While exploring your spa, we found ourselves thinking about the experience your clients have before they
-                ever step through the door. The atmosphere, the care, the attention to detail: those are the things that
-                make people return. Yet online, that feeling is often difficult to capture.</p>
-            <p>So we put together a concept.</p>
-            <p>Not a template. Not a generic redesign. A visual direction that imagines how your spa could be presented
-                through a more refined digital experience.</p>
-            <p>The goal was simple: create the same sense of calm, trust, and anticipation online that clients feel when
-                they visit in person.</p>
-            <a href="#" class="btn btn-green ">Contact Us </a>
-        </div>
-    </section>
+                    <tr>
+                        <td style="background-color:#ffffff; padding:60px 20px 80px 20px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%; max-width:650px; margin:0 auto;">
+                                <tr>
+                                    <td style="padding:0 0 20px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        In the concept, we focused on:
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 12px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        - A cleaner, more elegant first impression
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 12px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        - Clear treatment and service presentation
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 12px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        - A booking experience designed to reduce friction
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 12px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        - Mobile-friendly layouts for modern clients
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 20px 0; font-size:16px; line-height:1.7; color:#000000;">
+                                        - Visual storytelling that reflects the quality of your brand
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0 0 30px 0; font-size:16px; line-height:1.7; color:#718096;">
+                                        We've included a preview below so you can see the direction for yourself.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" style="display:inline-block; padding:12px 24px; border-radius:4px; background-color:#191919; color:#34d399; text-decoration:none; font-size:18px; font-weight:700; line-height:1.2;">
+                                            Start Your Project ->
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-    <!-- Gallery / Preview Section -->
-    <section class="previews">
-        <div class="container">
-            <!-- Row 1: Dual Previews -->
-            <div class="preview-row">
-                <div class="">
-                    <img src="/images/services/services-1.png" alt="services">
-                </div>
-                <div class="">
-                    <img src="/images/services/services-1.png" alt="services">
-                </div>
-            </div>
-
-            <!-- Row 2: Full Width Feature -->
-            <div class="preview-card full-row bg-dark-green">
-               <img src="/images/services/testi-iamge.png" alt="testimonial">
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Checklist Section -->
-    <section class="checklist">
-        <div class="container text-container">
-            <p>In the concept, we focused on:</p>
-            <ul>
-                <li>A cleaner, more elegant first impression</li>
-                <li> Clear treatment and service presentation</li>
-                <li> A booking experience designed to reduce friction</li>
-                <li> Mobile-friendly layouts for modern clients</li>
-                <li> Visual storytelling that reflects the quality of your brand</li>
-            </ul>
-            <p class="preview-note">We've included a preview below so you can see the direction for yourself.</p>
-            <a href="#" class="btn btn-green-2">Start Your Project ↗</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-logo">✦</div>
-            <p class="copyright">© 2026 OrFactor. All rights reserved.</p>
-            <p class="address">House #50, Lake Circus Road, Dhanmondi, Dhaka, Bangladesh</p>
-
-            <p class="footer-msg">Whether you're planning a redesign now or simply exploring possibilities, we'd be
-                happy to share the full concept and discuss how it could be adapted to your business.</p>
-            <p class="closing">Thank you for your time, and we hope you find the ideas valuable.</p>
-            <p class="signature">Warm regards,<br>The OrFactor Team</p>
-
-            <div class="social-icons">
-                <span>𝕏</span>
-                <span>📸</span>
-                <span>🔝</span>
-                <span>🌐</span>
-                <span>✉️</span>
-            </div>
-
-            <p class="support">Need help? Visit our Help Center or contact support at support@mindshaper.xyz</p>
-        </div>
-    </footer>
-
+                    <tr>
+                        <td style="background-color:#0cb38a; padding:60px 20px; text-align:center;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%; max-width:650px; margin:0 auto;">
+                                <tr>
+                                    <td align="center" style="padding:0 0 15px 0; font-size:32px; line-height:1; color:#ffffff; font-weight:700;">
+                                        *
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0 0 5px 0; font-size:14px; line-height:1.6; color:#ffffff;">
+                                        &copy; 2026 OrFactor. All rights reserved.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0 0 5px 0; font-size:14px; line-height:1.6; color:#ffffff;">
+                                        House #50, Lake Circus Road, Dhanmondi, Dhaka, Bangladesh
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:40px 0 20px 0; font-size:14px; line-height:1.6; color:#ffffff;">
+                                        Whether you're planning a redesign now or simply exploring possibilities, we'd be happy to share the full concept and discuss how it could be adapted to your business.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0 0 20px 0; font-size:14px; line-height:1.6; color:#ffffff;">
+                                        Thank you for your time, and we hope you find the ideas valuable.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0 0 40px 0; font-size:14px; line-height:1.6; color:#ffffff; font-weight:600;">
+                                        Warm regards,<br>The OrFactor Team
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:0 0 40px 0;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; margin:0 auto;">
+                                            <tr>
+                                                <td align="center" style="width:36px; height:36px; background-color:rgba(255,255,255,0.2); border-radius:18px; font-size:14px; color:#ffffff;">F</td>
+                                                <td style="width:20px;">&nbsp;</td>
+                                                <td align="center" style="width:36px; height:36px; background-color:rgba(255,255,255,0.2); border-radius:18px; font-size:14px; color:#ffffff;">I</td>
+                                                <td style="width:20px;">&nbsp;</td>
+                                                <td align="center" style="width:36px; height:36px; background-color:rgba(255,255,255,0.2); border-radius:18px; font-size:14px; color:#ffffff;">L</td>
+                                                <td style="width:20px;">&nbsp;</td>
+                                                <td align="center" style="width:36px; height:36px; background-color:rgba(255,255,255,0.2); border-radius:18px; font-size:14px; color:#ffffff;">W</td>
+                                                <td style="width:20px;">&nbsp;</td>
+                                                <td align="center" style="width:36px; height:36px; background-color:rgba(255,255,255,0.2); border-radius:18px; font-size:14px; color:#ffffff;">@</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-size:12px; line-height:1.6; color:rgba(255,255,255,0.8);">
+                                        Need help? Visit our Help Center or contact support at support@mindshaper.xyz
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
-
 </html>
