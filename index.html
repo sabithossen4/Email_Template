@@ -21,7 +21,7 @@
 
         .container {
             width: 100%;
-            max-width: 1100px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -53,8 +53,8 @@
         }
 
         .btn-green {
-            background-color: #0fb78d;
-            color: #ffffff;
+            background-color: #34D399;
+            color: #000;
         }
 
         .btn-dark {
@@ -137,7 +137,7 @@
             display: flex;
             justify-content: center;
         }
-        
+
         /* --- Intro Section --- */
         .intro {
             padding: 80px 0;
@@ -147,8 +147,9 @@
 
         .intro p {
             margin-bottom: 20px;
+            font-weight: 400;
             font-size: 16px;
-            color: #4a5568;
+            color: #000;
         }
 
         .intro .btn {
@@ -161,18 +162,10 @@
         }
 
         .preview-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            display: flex;
             margin-bottom: 20px;
         }
-
-        .preview-card {
-            border-radius: 8px;
-            padding: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
+        
         .bg-light {
             background-color: #ffffff;
             color: #2d3748;
@@ -187,26 +180,8 @@
             background-color: #062f22;
             color: #ffffff;
         }
-
-        .preview-card h3 {
-            font-family: serif;
-            font-size: 22px;
-            margin-bottom: 20px;
-        }
-
-        .placeholder-gallery {
-            display: flex;
-            gap: 10px;
-            margin-top: 35px;
-        }
-
-        .placeholder-gallery .box {
-            flex: 1;
-            background-color: #edf2f7;
-            height: 80px;
-            border-radius: 4px;
-        }
-
+        
+        
         .placeholder-list .line {
             background-color: #2d3748;
             height: 12px;
@@ -330,9 +305,8 @@
         /* --- Responsive Adaptations --- */
         @media (max-width: 768px) {
 
-            .preview-row,
-            .full-row {
-                grid-template-columns: 1fr;
+            .preview-row{
+                flex-direction: column;
             }
 
             .hero h1 {
@@ -378,7 +352,7 @@
                 through a more refined digital experience.</p>
             <p>The goal was simple: create the same sense of calm, trust, and anticipation online that clients feel when
                 they visit in person.</p>
-            <a href="#" class="btn btn-green">Contact Us </a>
+            <a href="#" class="btn btn-green ">Contact Us </a>
         </div>
     </section>
 
@@ -386,34 +360,18 @@
     <section class="previews">
         <div class="container">
             <!-- Row 1: Dual Previews -->
-            <div class="preview-row split-row">
-                <div class="preview-card bg-light">
-                    <h3>Tailored Journey for you</h3>
-                    <div class="placeholder-gallery">
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                    </div>
+            <div class="preview-row">
+                <div class="">
+                    <img src="/images/services/services-1.png" alt="services">
                 </div>
-                <div class="preview-card bg-dark">
-                    <h3>Our Service Add-ons</h3>
-                    <div class="placeholder-list">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
+                <div class="">
+                    <img src="/images/services/services-1.png" alt="services">
                 </div>
             </div>
 
             <!-- Row 2: Full Width Feature -->
             <div class="preview-card full-row bg-dark-green">
-                <div class="feature-text">
-                    <h3>Enjoy the healing benefits of light and color</h3>
-                    <p>The right fixtures marry your space with colors from the sun's visible light spectrum, creating
-                        an artful atmosphere with a balance effect.</p>
-                </div>
-                <div class="feature-visual">
-                    <div class="wave-graphic"></div>
-                </div>
+               <img src="/images/services/testi-iamge.png" alt="testimonial">
             </div>
         </div>
     </section>
