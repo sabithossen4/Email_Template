@@ -6,10 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="x-apple-disable-message-reformatting">
     <style>
-        @media only screen and (max-width: 670px) {
-            .hero-shape {
-                display: none !important;
+        @media only screen and (max-width: 800px) {
+            .hero-shape{
+                background-position:center -300px !important;
             }
+        }
+        @media only screen and (max-width: 700px) {
+            .hero-shape{
+                background-position:center -260px !important;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .hero-shape{
+                background-position:center -220px !important;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .hero-shape{
+                background-position:center -200px !important;
+                padding:40px 0 0 0 !important;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .hero-shape{
+                background-position:center -150px !important;
+            }
+        }
+        @media only screen and (max-width: 320px) {
+            .hero-shape{
+                background-position:center -115px !important;
+            }
+        }
+        @media only screen and (max-width: 670px) {
             .hero-title{
                 font-size: 36px !important;
             }
@@ -61,8 +89,8 @@
             </tr>
 
             <tr>
-                <td align="center" bgcolor="#34d399" style=" background-color:#34d399; padding:56px 0px 0 0px; text-align:center;">
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:900px; margin:0 auto; overflow:hidden;">
+                <td align="center" bgcolor="#34d399" style=" background-color:#34d399; padding:56px 0 0 0; text-align:center;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:900px; margin:0 auto;">
                         <tr>
                             <td align="center" style="padding:0 0 20px 0;">
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:800px; margin:0 auto;">
@@ -100,11 +128,23 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style="padding:0;">
-                                <div style="width:100%; max-width:900px; margin:0 auto; line-height:0; padding-top:62%; overflow:hidden;">
-                                    <img class="hero-shape" src="https://orfactor.com/email-template/shape_wavy.png" alt="" width="900" style="display:block; width:100%; max-width:900px; height:auto; border:0; margin:0 auto; margin-top:-980px; margin-bottom:-1005px;">
-                                    <img src="https://orfactor.com/email-template/hero-img.png" alt="Spa website concept preview" width="860" style="display:block; width:100%; max-width:860px; height:auto; border:0; margin:0 auto; ">
-                                </div>
+                            <td class="hero-shape" align="center" background="https://orfactor.com/email-template/shape_wavy.png" bgcolor="#34d399" style="padding:80px 0 0 0; line-height:0; background-color:#34d399; background-image:url('https://orfactor.com/email-template/shape_wavy.png'); background-repeat:no-repeat; background-position:center -370px; background-size:100% auto;">
+                                <!--[if gte mso 9]>
+                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:900px;">
+                                    <v:fill type="frame" src="https://orfactor.com/email-template/shape_wavy.png" color="#34d399" />
+                                    <v:textbox inset="0,0,0,0">
+                                <![endif]-->
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%;">
+                                    <tr>
+                                        <td align="center" style="padding:0; line-height:0;">
+                                            <img src="https://orfactor.com/email-template/hero-img.png" alt="Spa website concept preview" width="860" style="display:block; width:100%; max-width:860px; height:auto; border:0; margin:0 auto;">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if gte mso 9]>
+                                    </v:textbox>
+                                </v:rect>
+                                <![endif]-->
                             </td>
                         </tr>
                     </table>
