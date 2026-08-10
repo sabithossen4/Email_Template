@@ -7,46 +7,14 @@
     <meta name="x-apple-disable-message-reformatting">
     <style>
         @media only screen and (max-width: 800px) {
-            .hero-shape{
-                background-position:center 60px !important;
-            }
-        }
-        @media only screen and (max-width: 700px) {
-            .hero-shape{
-                background-position:center 90px !important;
-                padding:60px 0 0 0 !important;
-            }
-        }
-        @media only screen and (max-width: 600px) {
-            .hero-shape{
-                background-position:center 155px !important;
-                padding:50px 0 0 0 !important;
-            }
-        }
-        @media only screen and (max-width: 500px) {
-            .hero-shape{
-                background-position:center 210px !important;
-                padding:50px 0 0 0 !important;
-            }
-        }
-        @media only screen and (max-width: 400px) {
-            .hero-shape{
-                background-position:center 190px !important;
-                padding:50px 0 0 0 !important;
-            }
-        }
-        @media only screen and (max-width: 360px) {
-            .hero-shape{
-                background-position:center 285px !important;
-                padding:50px 0 0 0 !important;
-            }
-        }
-        @media only screen and (max-width: 320px) {
-            .hero-shape{
-                background-position:center 90px !important;
+            .hero-shape {
+                top: 100px !important;
             }
         }
         @media only screen and (max-width: 670px) {
+            .hero-shape {
+                display: none !important;
+            }
             .hero-title{
                 font-size: 36px !important;
             }
@@ -66,7 +34,7 @@
 </head>
 <body style="margin:0; padding:0; width:100%; background-color:#f7fafc; font-family:'Satoshi', Arial, Helvetica, sans-serif; color:#2d3748;">
     <center style="width:100%; background-color:#f7fafc;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f7fafc" style="border-collapse:collapse; max-width:900px; background-color:#f7fafc;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f7fafc" style="border-collapse:collapse; width:100%; background-color:#f7fafc;">
             <tr>
                 <td bgcolor="#34d399" style="background-color:#34d399; padding:0 20px;">
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:900px; margin:0 auto;">
@@ -78,7 +46,12 @@
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
                                                 <tr>
                                                     <td valign="middle" style="padding-right:12px;">
-                                                        <img src="https://orfactor.com/email-template/orfactor-logo.png" alt="OrFactor logo" width="21" style="display:block; width:21px; height:32px; border:0;">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OrFactor logo" style="display:block; width:21px; height:32px;">
+                                                            <path d="M0 21.3704C0.000447397 24.1894 1.1126 26.8928 3.0919 28.8862C5.07119 30.8795 7.75555 31.9995 10.5547 32V21.3704H0Z" fill="#191919"/>
+                                                            <path d="M0 21.3704C1.3862 21.3704 2.75883 21.0926 4.03949 20.5528C5.32016 20.013 6.48378 19.2218 7.46389 18.2244C8.44401 17.227 9.22143 16.0429 9.75175 14.7398C10.2821 13.4367 10.5549 12.04 10.5547 10.6296H0V21.3704Z" fill="#191919"/>
+                                                            <path d="M10.5547 10.6296V21.3704H21C21.0002 19.96 20.7302 18.5633 20.2054 17.2602C19.6806 15.9571 18.9112 14.773 17.9412 13.7756C16.9713 12.7782 15.8197 11.987 14.5523 11.4472C13.2849 10.9074 11.9265 10.6296 10.5547 10.6296Z" fill="#191919"/>
+                                                            <path d="M10.5547 10.6296H21V0C18.2299 0.000450571 15.5733 1.12049 13.6145 3.11383C11.6558 5.10716 10.5551 7.81057 10.5547 10.6296Z" fill="#191919"/>
+                                                        </svg>
                                                     </td>
                                                     <td valign="middle" style="font-size:20px; font-weight:700; color:#191919;">
                                                         OrFactor
@@ -98,13 +71,13 @@
             </tr>
 
             <tr>
-                <td class="hero-shape" align="center" bgcolor="#34d399" background="https://orfactor.com/email-template/shape_wavy.png" style=" background-color:#34d399; background-image:url('https://orfactor.com/email-template/shape_wavy.png'); background-repeat:no-repeat; background-position:center 0px; background-size:100% auto; padding:56px 0 0 0; text-align:center;">
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:900px; margin:0 auto;">
+                <td align="center" bgcolor="#34d399" style=" background-color:#34d399; padding:56px 20px 0 20px; text-align:center;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="position:relative; border-collapse:collapse; width:100%; max-width:900px; margin:0 auto; overflow:hidden;">
                         <tr>
                             <td align="center" style="padding:0 0 20px 0;">
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:800px; margin:0 auto;">
                                     <tr>
-                                        <td class="hero-title" align="center" style=" font-size:42px; line-height:1.3; font-weight:900; color:#191919;">
+                                        <td class="hero-title" align="center" style="position:relative; font-size:42px; line-height:1.3; font-weight:900; color:#191919; z-index:3;">
                                             Your spa deserves a digital experience as calming as the treatments you offer.
                                         </td>
                                     </tr>
@@ -115,7 +88,7 @@
                             <td align="center" style="padding:0 0 30px 0;">
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:600px; margin:0 auto;">
                                     <tr>
-                                        <td align="center" style="font-size:20px; line-height:1.6; font-weight:400; color:#191919;">
+                                        <td align="center" style="position:relative; z-index:3; font-size:20px; line-height:1.6; font-weight:400; color:#191919;">
                                             We imagined how your brand could feel online: elegant, trustworthy, and designed to turn visitors into bookings.
                                         </td>
                                     </tr>
@@ -126,10 +99,12 @@
                             <td align="center" style="padding:0 0 8px 0;">
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:separate; margin:0 auto;">
                                     <tr>
-                                        <td align="center" bgcolor="#ffffff" style="border-radius:4px; background-color:#ffffff;">
+                                        <td align="center" bgcolor="#ffffff" style="border-radius:4px; background-color:#ffffff; position:relative; z-index:3;">
                                             <a href="https://orfactor.com/start-project/" target="_blank" style="display:inline-block; padding:12px 24px; font-size:18px; line-height:1.2; font-weight:700; color:#191919; text-decoration:none;">
                                                 <span style="display:inline-block; vertical-align:middle;">Start Your Project</span>
-                                                <img src="https://orfactor.com/email-template/arrow_right.png" alt="Arrow icon" width="11" style="display:inline-block; width:11px; height:11px; vertical-align:middle; margin-left:6px; border:0;">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arrow icon" style="display:inline-block; width:11px; height:11px; vertical-align:middle; margin-left:6px;">
+                                                    <path d="M0.628046 1.00086L9.21232 1.00086L9.21232 9.58514M0.7062 9.50698L9.09208 1.12111" stroke="#191919" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                                </svg>
                                             </a>
                                         </td>
                                     </tr>
@@ -137,23 +112,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style="padding:60px 0 0 0; line-height:0; ">
-                                <!--[if gte mso 9]>
-                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:900px;">
-                                    <v:fill type="frame" src="https://orfactor.com/email-template/shape_wavy.png" color="#34d399" />
-                                    <v:textbox inset="0,0,0,0">
-                                <![endif]-->
-                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; width:100%;">
-                                    <tr>
-                                        <td align="center" style="padding:0; line-height:0;">
-                                            <img src="https://orfactor.com/email-template/hero-img.png" alt="Spa website concept preview" width="860" style="display:block; width:100%; max-width:860px; height:auto; border:0; margin:0 auto;">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!--[if gte mso 9]>
-                                    </v:textbox>
-                                </v:rect>
-                                <![endif]-->
+                            <td align="center" style="padding:0;">
+                                <div style="width:100%; max-width:900px; margin:0 auto; line-height:0; padding-top:62%; overflow:hidden;">
+                                    <svg class="hero-shape" width="900" height="1528" viewBox="0 0 900 1528" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block; width:100%; max-width:900px; height:auto; border:0; position:absolute; left:0; right:0; top:0; margin:0 auto; z-index:1;">
+                                        <path d="M-1708.25 1228.17C-1630.52 961.037 -1552.78 693.904 -1416.32 735.562C-1279.85 777.227 -1084.66 1127.68 -963.93 1086.6C-843.202 1045.51 -796.941 612.909 -671.997 593.991C-547.051 575.081 -343.419 969.872 -219.602 945.027C-95.7846 920.182 -51.7906 475.704 72.3234 452.421C196.437 429.138 400.664 827.052 524.719 803.457C648.773 779.861 692.656 334.756 816.651 310.849C940.647 286.941 1144.75 684.232 1269.04 661.886C1393.33 639.54 1437.81 197.558 1560.97 169.278C1684.14 141.005 1885.99 526.419 2013.37 520.314C2140.75 514.201 2193.65 116.564 2305.29 27.7073C2416.94 -61.1411 2587.31 158.801 2757.69 378.743M-1694.09 1302.62C-1616.36 1035.48 -1538.62 768.351 -1402.16 810.016C-1265.69 851.674 -1070.5 1202.12 -949.77 1161.05C-829.04 1119.97 -782.781 687.356 -657.835 668.446C-532.891 649.528 -329.259 1044.32 -205.442 1019.47C-81.6248 994.629 -37.6292 550.158 86.4848 526.875C210.599 503.592 414.824 901.499 538.878 877.903C662.933 854.308 706.817 409.211 830.813 385.303C954.808 361.396 1158.91 758.679 1283.2 736.333C1407.49 713.987 1451.97 272.005 1575.13 243.733C1698.3 215.452 1900.15 600.874 2027.53 594.761C2154.91 588.648 2207.81 191.01 2319.45 102.162C2431.1 13.3058 2601.47 233.248 2771.85 453.19M-1679.94 1377.04C-1602.2 1109.9 -1524.47 842.779 -1388 884.436C-1251.53 926.094 -1056.34 1276.54 -935.615 1235.47C-814.886 1194.39 -768.626 761.776 -643.681 742.866C-518.735 723.955 -315.104 1118.74 -191.287 1093.89C-67.47 1069.05 -23.4745 624.578 100.639 601.295C224.754 578.012 428.978 975.919 553.033 952.323C677.088 928.728 720.972 483.631 844.968 459.723C968.963 435.815 1173.06 833.099 1297.35 810.753C1421.65 788.407 1466.12 346.433 1589.29 318.152C1712.45 289.872 1914.3 675.293 2041.68 669.181C2169.06 663.068 2221.96 265.43 2333.61 176.582C2445.25 87.7334 2615.63 307.668 2786 527.61M-1665.77 1451.5C-1588.04 1184.36 -1510.31 917.231 -1373.84 958.888C-1237.37 1000.55 -1042.18 1351 -921.453 1309.93C-800.725 1268.84 -754.464 836.236 -629.52 817.318C-504.574 798.407 -300.942 1193.2 -177.125 1168.35C-53.3077 1143.51 -9.31364 699.03 114.8 675.747C238.914 652.464 443.141 1050.38 567.195 1026.78C691.25 1003.19 735.133 558.083 859.128 534.175C983.124 510.267 1187.22 907.558 1311.52 885.212C1435.81 862.866 1480.29 420.885 1603.45 392.604C1726.61 364.332 1928.46 749.745 2055.84 743.64C2183.22 737.528 2236.13 339.89 2347.77 251.034C2459.41 162.185 2629.79 382.128 2800.16 602.07M-1651.62 1525.91C-1573.89 1258.78 -1496.15 991.647 -1359.68 1033.31C-1223.22 1074.97 -1028.03 1425.42 -907.299 1384.34C-786.569 1343.26 -740.31 910.652 -615.364 891.742C-490.42 872.824 -286.788 1267.61 -162.971 1242.77C-39.1536 1217.93 4.84192 773.454 128.956 750.171C253.07 726.888 457.295 1124.79 581.35 1101.2C705.404 1077.6 749.289 632.507 873.284 608.599C997.279 584.692 1201.38 981.975 1325.67 959.629C1449.96 937.283 1494.44 495.301 1617.6 467.029C1740.77 438.748 1942.62 824.17 2070 818.057C2197.38 811.944 2250.28 414.306 2361.92 325.458C2473.57 236.602 2643.94 456.544 2814.32 676.486" stroke="white" stroke-width="15"/>
+                                    </svg>
+                                    <img src="https://orfactor.com/email-template/hero-img.png" alt="Spa website concept preview" width="860" style="display:block; width:100%; max-width:860px; height:auto; border:0; position:absolute; left:0; right:0; bottom:0; margin:0 auto; z-index:2;">
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -164,7 +129,7 @@
                 <td bgcolor="#ffffff" style="background-color:#ffffff; padding:0 20px;">
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:900px; margin:0 auto;">
                         <tr>
-                            <td style="padding:60px 0;">
+                            <td style="padding:80px 0;">
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:650px; margin:0 auto;">
                                     <tr>
                                         <td style="padding:0 0 20px 0; font-size:16px; line-height:1.7; color:#000000;">
@@ -198,7 +163,9 @@
                                                     <td align="center" bgcolor="#34d399" style="border-radius:4px; background-color:#34d399;">
                                                         <a href="https://orfactor.com/contact/" target="_blank" style="display:inline-block; padding:12px 24px; font-size:18px; line-height:1.2; font-weight:700; color:#191919; text-decoration:none;">
                                                             <span style="display:inline-block; vertical-align:middle;">Contact Us</span>
-                                                            <img src="https://orfactor.com/email-template/arrow_right.png" alt="Arrow icon" width="11" style="display:inline-block; width:11px; height:11px; vertical-align:middle; margin-left:6px; border:0;">
+                                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arrow icon" style="display:inline-block; width:11px; height:11px; vertical-align:middle; margin-left:6px;">
+                                                                <path d="M0.628046 1.00086L9.21232 1.00086L9.21232 9.58514M0.7062 9.50698L9.09208 1.12111" stroke="#191919" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                                            </svg>
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -283,10 +250,12 @@
                                         <td>
                                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
                                                 <tr>
-                                                    <td align="center" bgcolor="#34d399" style="border-radius:4px; background-color:#34d399;">
-                                                        <a href="https://orfactor.com/start-project/" target="_blank" style="display:inline-block; padding:12px 24px; font-size:18px; line-height:1.2; font-weight:700; color:#191919; text-decoration:none;">
+                                                    <td align="center" bgcolor="#191919" style="border-radius:4px; background-color:#191919;">
+                                                        <a href="https://orfactor.com/start-project/" target="_blank" style="display:inline-block; padding:12px 24px; font-size:18px; line-height:1.2; font-weight:700; color:#34d399; text-decoration:none;">
                                                             <span style="display:inline-block; vertical-align:middle;">Start Your Project</span>
-                                                            <img src="https://orfactor.com/email-template/arrow_right.png" alt="Arrow icon" width="11" style="display:inline-block; width:11px; height:11px; vertical-align:middle; margin-left:6px; border:0;">
+                                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arrow icon" style="display:inline-block; width:11px; height:11px; vertical-align:middle; margin-left:6px;">
+                                                                <path d="M0.628046 1.00086L9.21232 1.00086L9.21232 9.58514M0.7062 9.50698L9.09208 1.12111" stroke="#34d399" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                                            </svg>
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -308,7 +277,12 @@
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse:collapse; width:100%; max-width:650px; margin:0 auto;">
                                     <tr>
                                         <td align="center" style="padding:0 0 18px 0;">
-                                            <img src="https://orfactor.com/email-template/orfactor-logo.png" alt="OrFactor logo" width="54" style="display:block; width:54px; height:82px; margin:0 auto; border:0;">
+                                            <svg width="54" height="82" viewBox="0 0 21 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OrFactor logo" style="display:block; width:54px; height:82px; margin:0 auto;">
+                                                <path d="M0 21.3704C0.000447397 24.1894 1.1126 26.8928 3.0919 28.8862C5.07119 30.8795 7.75555 31.9995 10.5547 32V21.3704H0Z" fill="#191919"/>
+                                                <path d="M0 21.3704C1.3862 21.3704 2.75883 21.0926 4.03949 20.5528C5.32016 20.013 6.48378 19.2218 7.46389 18.2244C8.44401 17.227 9.22143 16.0429 9.75175 14.7398C10.2821 13.4367 10.5549 12.04 10.5547 10.6296H0V21.3704Z" fill="#191919"/>
+                                                <path d="M10.5547 10.6296V21.3704H21C21.0002 19.96 20.7302 18.5633 20.2054 17.2602C19.6806 15.9571 18.9112 14.773 17.9412 13.7756C16.9713 12.7782 15.8197 11.987 14.5523 11.4472C13.2849 10.9074 11.9265 10.6296 10.5547 10.6296Z" fill="#191919"/>
+                                                <path d="M10.5547 10.6296H21V0C18.2299 0.000450571 15.5733 1.12049 13.6145 3.11383C11.6558 5.10716 10.5551 7.81057 10.5547 10.6296Z" fill="#191919"/>
+                                            </svg>
                                         </td>
                                     </tr>
                                     <tr>
@@ -354,7 +328,9 @@
                                                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="44" height="44" style="border-collapse:collapse; width:44px; height:44px;">
                                                                             <tr>
                                                                                 <td align="center" valign="middle" width="44" height="44" style="width:44px; height:44px; line-height:0;">
-                                                                                    <img src="https://orfactor.com/email-template/freelancer.png" alt="Social icon" width="21" style="display:block; width:21px; height:21px; margin:0 auto; border:0;">
+                                                                                    <svg width="29" height="21" viewBox="0 0 29 21" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Social icon 2" style="display:block; width:29px; height:21px; margin:0 auto;">
+                                                                                        <path d="M16.5866 0L18.5103 2.65697L28.2405 0M6.477 20.6878L11.7421 15.6173L8.57423 12.2678M15.7895 0L12.9746 2.5005L17.7073 2.67435M4.85334 0L5.86518 2.03981L11.4333 2.38171M7.83593 10.5786L11.948 3.01915L0 2.38171M8.31244 11.0567L12.201 15.1711L16.4866 11.0306L17.8162 3.32049L12.5922 3.05682" fill="#191919"/>
+                                                                                    </svg>
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -371,7 +347,9 @@
                                                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="44" height="44" style="border-collapse:collapse; width:44px; height:44px;">
                                                                             <tr>
                                                                                 <td align="center" valign="middle" width="44" height="44" style="width:44px; height:44px; line-height:0;">
-                                                                                    <img src="https://orfactor.com/email-template/upwork.png" alt="Social icon" width="21" style="display:block; width:21px; height:21px; margin:0 auto; border:0;">
+                                                                                    <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Social icon 3" style="display:block; width:30px; height:21px; margin:0 auto;">
+                                                                                        <path d="M22.6024 11.7518C21.2605 11.7518 20.0025 11.184 18.8591 10.26L19.1367 8.95184L19.1465 8.90078C19.3985 7.51113 20.1803 5.18047 22.6036 5.18047C23.4764 5.18111 24.3132 5.52755 24.9304 6.14371C25.5475 6.75987 25.8945 7.59537 25.8952 8.46674C25.8936 9.33792 25.546 10.1729 24.9288 10.7887C24.3116 11.4045 23.475 11.7508 22.6024 11.7518ZM22.6024 1.85529C19.5106 1.85529 17.1104 3.86012 16.1362 7.16342C14.6506 4.93366 13.5205 2.2565 12.8642 0H9.53244V8.64668C9.5318 9.46787 9.20486 10.2553 8.62337 10.836C8.04189 11.4168 7.25337 11.7435 6.43087 11.7445C5.60879 11.7429 4.82089 11.4159 4.23993 10.8352C3.65898 10.2545 3.33237 9.46745 3.33173 8.64668V0H0V8.64668C0 12.1895 2.88604 15.094 6.43087 15.094C9.97813 15.094 12.8642 12.1895 12.8642 8.64668V7.19989C13.5084 8.54577 14.3035 9.90988 15.268 11.1159L13.2307 20.6878H16.6367L18.1138 13.7457C19.4083 14.5712 20.8964 15.094 22.6024 15.094C26.2556 15.094 29.2257 12.1129 29.2257 8.46796C29.2257 4.8206 26.2556 1.85529 22.6024 1.85529Z" fill="#191919"/>
+                                                                                    </svg>
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -388,7 +366,11 @@
                                                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="44" height="44" style="border-collapse:collapse; width:44px; height:44px;">
                                                                             <tr>
                                                                                 <td align="center" valign="middle" width="44" height="44" style="width:44px; height:44px; line-height:0;">
-                                                                                    <img src="https://orfactor.com/email-template/freelancer_2.png" alt="Social icon" width="21" style="display:block; width:21px; height:21px; margin:0 auto; border:0;">
+                                                                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Social icon 4" style="display:block; width:21px; height:21px; margin:0 auto;">
+                                                                                        <path d="M19.7927 6.13739C18.9092 4.17518 17.4352 2.53715 15.5761 1.45144C13.4691 0.205338 10.9902 -0.259384 8.57452 0.138851C6.43716 0.502325 4.4694 1.53138 2.95228 3.07906C1.3482 4.69809 0.327157 6.80323 0.0492038 9.06447C-0.0164013 9.80244 -0.0164013 10.5448 0.0492038 11.2828C0.101884 11.8745 0.19404 12.4621 0.32506 13.0416C0.875145 15.0559 2.0195 16.858 3.60908 18.2132C5.26461 19.6444 7.33726 20.5051 9.52032 20.6678C10.3271 20.7128 11.1363 20.682 11.9374 20.5759C13.8036 20.2885 15.5565 19.499 17.0079 18.292C18.1853 17.3063 19.1268 16.0695 19.7633 14.6726C20.3998 13.2757 20.7151 11.7541 20.686 10.2196C20.6886 8.81015 20.3838 7.41711 19.7927 6.13739ZM18.1507 13.7898C17.3799 15.5454 16.0373 16.9888 14.3413 17.8851C12.8637 18.6705 11.1844 18.9951 9.52032 18.817C8.39108 18.7058 7.29556 18.3698 6.29836 17.8287C5.30117 17.2877 4.4225 16.5526 3.71417 15.6668C2.36873 13.9946 1.71114 11.8732 1.87512 9.73389C1.99693 7.92359 2.70203 6.20135 3.88494 4.8248C5.31077 3.15369 7.3323 2.10369 9.52032 1.89772C11.3564 1.72263 13.1998 2.14628 14.7748 3.10531C16.6648 4.25527 18.0315 6.09649 18.5842 8.23754C19.0675 10.0757 18.9147 12.0231 18.1507 13.7635V13.7898Z" fill="#191919"/>
+                                                                                        <path d="M5.57946 5.86174C5.20573 5.93082 4.85926 6.10436 4.58025 6.36225C4.30124 6.62013 4.10113 6.95178 4.00313 7.31872C3.90796 7.71326 3.93629 8.12748 4.08429 8.50541C4.23229 8.88335 4.49283 9.20678 4.83071 9.43199C5.07408 9.58062 5.34567 9.67719 5.6283 9.7156C5.91093 9.75401 6.19846 9.73342 6.47272 9.65513C6.9398 9.50623 7.33395 9.18758 7.5772 8.76223C7.82044 8.33688 7.89507 7.83579 7.78633 7.3581C7.6759 6.87613 7.38688 6.45384 6.97743 6.17621C6.56797 5.89858 6.06848 5.78622 5.57946 5.86174Z" fill="#191919"/>
+                                                                                        <path d="M14.3018 5.87489C13.8428 5.95876 13.4285 6.20268 13.1326 6.56323C12.8367 6.92379 12.6785 7.37757 12.6861 7.84378C12.6929 8.09833 12.75 8.34903 12.8542 8.58141C12.9584 8.81379 13.1076 9.02327 13.2933 9.19775C13.4789 9.37224 13.6972 9.50829 13.9357 9.59806C14.1742 9.68782 14.4281 9.72953 14.6828 9.72078C14.963 9.71794 15.2393 9.65376 15.492 9.53274C15.7448 9.41173 15.9679 9.23683 16.1458 9.02035C16.3236 8.80388 16.4518 8.55109 16.5213 8.27978C16.5908 8.00846 16.6 7.72523 16.5481 7.45C16.4552 6.94558 16.1676 6.49783 15.7475 6.20321C15.3273 5.90859 14.8082 5.79068 14.3018 5.87489Z" fill="#191919"/>
+                                                                                    </svg>
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -405,7 +387,9 @@
                                                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="44" height="44" style="border-collapse:collapse; width:44px; height:44px;">
                                                                             <tr>
                                                                                 <td align="center" valign="middle" width="44" height="44" style="width:44px; height:44px; line-height:0;">
-                                                                                    <img src="https://orfactor.com/email-template/dribbble.png" alt="Social icon" width="21" style="display:block; width:21px; height:21px; margin:0 auto; border:0;">
+                                                                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Social icon 5" style="display:block; width:23px; height:23px; margin:0 auto;">
+                                                                                        <path d="M21.5081 11.1642C21.5098 12.5267 21.2415 13.876 20.7188 15.1341C20.196 16.3923 19.4291 17.5344 18.4624 18.4944C17.5035 19.4515 16.3654 20.2103 15.1132 20.7274C13.8609 21.2445 12.519 21.5098 11.1642 21.5081C5.45129 21.5081 0.820323 16.8772 0.820323 11.1642C0.816599 8.51191 1.83542 5.96023 3.6649 4.03986C4.6301 3.02122 5.79305 2.21029 7.08254 1.6567C8.37203 1.10311 9.76093 0.818506 11.1642 0.820321C12.519 0.818651 13.8609 1.08395 15.1132 1.60105C16.3654 2.11815 17.5035 2.87693 18.4624 3.83402M15.3018 1.68093C16.48 2.19595 17.5518 2.92612 18.4624 3.83402C19.4291 4.79409 20.196 5.93619 20.7188 7.19435C21.2415 8.45251 21.5098 9.80179 21.5081 11.1642M21.5081 11.1642C19.999 11.1642 15.8357 10.5951 12.1093 12.231C8.0612 14.0086 5.13025 16.7663 3.85278 18.4808M21.5081 11.1642C21.5081 12.4376 21.278 13.6576 20.8565 14.7846M7.28526 1.57237C8.90408 3.06655 12.4365 6.87052 13.7502 10.6471C15.0639 14.4236 15.55 19.067 15.85 20.3885M0.900114 9.87109C2.85408 9.98901 8.02655 10.095 11.3366 8.68154C14.6467 7.26805 17.4949 4.66811 18.4718 3.84318M1.59626 15.1015C2.50786 17.3077 4.15168 19.1325 6.25102 20.2688" stroke="#191919" stroke-width="1.64189" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                    </svg>
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -420,7 +404,7 @@
                                     </tr>
                                     <tr>
                                         <td align="center" style="font-size:14px; line-height:1.6; color:#191919;">
-                                            Need help? Visit our Help Center or contact support at <a href="mailto:support@mindshaper.xyz" target="_blank" style="color:#191919; text-decoration:underline;">hello@nexkraft.com</a>
+                                            Need help? Visit our Help Center or contact support at <a href="mailto:support@mindshaper.xyz" target="_blank" style="color:#191919; text-decoration:underline;">support@mindshaper.xyz</a>
                                         </td>
                                     </tr>
                                 </table>
